@@ -37,6 +37,11 @@ public class Point {
 		System.out.println("je suis un point de coordonnée ("+x+","+y+")");
 	}
 	
+	public String toString()
+	{
+		return  "["+x+";"+y+"]";
+	}
+	
 	public int getX()
 	{
 		return this.x;
@@ -71,5 +76,10 @@ public class Point {
 		 tmp.x=x;
 		 tmp.y=y;
 		 return tmp;
+	 }
+	 
+	 boolean equals(Point p)
+	 {
+		 return ((p.x==x) &&(p.y==y));
 	 }
 }
