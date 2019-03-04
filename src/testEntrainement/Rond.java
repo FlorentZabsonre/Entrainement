@@ -3,7 +3,13 @@ package testEntrainement;
 public class Rond {
  private int r;
  private Point p;
- 
+  
+ public Rond() {}
+ public Rond(int r, Point p)
+ {
+	 this.r=r;
+	 p=this.p;
+ }
  public int getR()
  {
 	 return this.r;

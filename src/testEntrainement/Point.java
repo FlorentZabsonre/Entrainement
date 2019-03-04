@@ -5,11 +5,14 @@ public class Point {
 	private int x;
 	private int y;
 	
+	private final int INIT_X=30;
+	private final int INIT_Y=30;
 	public Point(int x, int y)
 	{
 		this.x=x;
 		this.y=y;
 	}
+
 	public Point()
 	{
 		
@@ -68,7 +71,12 @@ public class Point {
 			 System.out.println("ce point n'est pas null");
 		 }
 	 }
-	 
+	 public Point getRandomPoint()
+	 {
+	 	int randx=(int) Math.random();
+	 	int randy=(int) Math.random();
+	 	return new Point(randx,randy);
+	 }
 	 public Point copie()
 	 {
 		 //renvoie à une réference à un Point
