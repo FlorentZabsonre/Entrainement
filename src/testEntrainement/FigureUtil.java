@@ -13,4 +13,10 @@ public  Rond getRandomRond()
 	rond=new Rond(centre,p);
 	return rond;
 }
+
+public Rectangle getRandomRectangle()
+{
+	
+	return null;
+}
 }
